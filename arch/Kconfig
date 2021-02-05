@@ -856,3 +856,19 @@ config VMAP_STACK
 	  that is incorrect if the stack is in vmalloc space.
 
 source "kernel/gcov/Kconfig"
+
+config PROJECT_PINE
+    default n
+    bool "If target device is pine."
+
+config PROJECT_OLIVE
+    default n
+    bool "If target device is olive."
+
+config PROJECT_OLIVEWOOD
+    default n
+    bool "If target device is olivewood."
+
+config PROJECT_OLIVELITE
+    default n
+    bool "If target device is olivelite."
