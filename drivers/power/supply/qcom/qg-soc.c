@@ -141,27 +141,15 @@ static bool is_scaling_required(struct qpnp_qg *chip)
 		/* SOC has not changed */
 		return false;
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 78e8d09ad748 (drivers: power: Import Xiaomi changes)
 	if (chip->catch_up_soc > chip->msoc && !usb_present)
 		/* USB is not present and SOC has increased */
 		return false;
 
 	if (chip->catch_up_soc > chip->msoc && usb_present &&
-<<<<<<< HEAD
-			(chip->charge_status != POWER_SUPPLY_STATUS_CHARGING &&
-			chip->charge_status != POWER_SUPPLY_STATUS_FULL))
-		/* USB is present, but not charging */
-		return false;
-
-=======
 	(chip->charge_status != POWER_SUPPLY_STATUS_CHARGING &&
 	chip->charge_status != POWER_SUPPLY_STATUS_FULL))
 		/*USB  is present,but not charging */
 		return false;
->>>>>>> 78e8d09ad748 (drivers: power: Import Xiaomi changes)
 	return true;
 }
 
